@@ -1,14 +1,21 @@
 import "./App.css";
+import Signin from "./pages/Signin";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Signup from "./pages/Signup";
-import { app } from "../config";
+
+const router = createBrowserRouter([
+	{
+		path: "/",
+		element: <Signup></Signup>,
+	},
+	{
+		path: "/signin",
+		element: <Signin></Signin>,
+	},
+]);
 
 function App() {
-	// console.log(app);
-	return (
-		<>
-			<Signup></Signup>
-		</>
-	);
+	return <RouterProvider router={router} />;
 }
 
 export default App;
