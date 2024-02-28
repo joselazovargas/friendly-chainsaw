@@ -1,12 +1,12 @@
 import "./App.css";
-import CreateEvent from "./pages/CreateEvent";
+import Signup from "./pages/Signup";
 import { app } from "../config";
 
 function App() {
-	console.log(app);
+	// console.log(app);
 	return (
 		<>
-			<CreateEvent></CreateEvent>
+			<Signup></Signup>
 		</>
 	);
 }
